@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Sarabun", sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ff4458;
+    text-decoration: underline;
+}
+
+header nav {
+    display: flex;
+    gap: 16px;
+    font-size: 18px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header .head-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 1.5rem;
+}
+
+header .login-wrapper {
+    height: 93px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+.btn-lang {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-lang img {
+    width: 18px;
+}
+
+.btn-login {
+    background-color: #fff;
+    padding: 8px 32px;
+    color: #333;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 2px solid;
+}
+
+.btn-login:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+main {
+    background-color: aqua;
+    height: 100vh;
+    background-image: 
+        linear-gradient( to bottom, #000, #0002, #000),
+        url('https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp')
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main h1 {
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(5, 5, 5, 0.6);
+    font-size: 120px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+.btn-grad {
+   padding: 15px 45px;
+   text-align: center;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 30px;
+   text-decoration: none;
+   font-size: 18px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+ }
+
+ @media screen and (max-width: 768px) {
+    main h1 {
+        font-size: 48px;
+    }
+    header nav {
+        display: none;
+    }
+    .btn-lang {
+        display: none;
+    }
+  }
